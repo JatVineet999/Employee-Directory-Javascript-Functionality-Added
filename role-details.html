@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/role-details.css" />
+    <title>Role-details-dashboard</title>
+    <script src="/javaScript/role-details.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="dashboard">
+          <div class="logo-container">
+            <img src="images/tezo-logo.svg" alt="logo" class="logo" />
+          </div>
+          <div class="all-dashboard">
+            <div class="all-dashboard-heading">
+              <hr class="all-dashboard-heading-line" />
+              <p>ALL</p>
+            </div>
+            <ul>
+              <li class="roles-selection-menu">
+                <a href="#" class="link">
+                  <div>
+                    <img
+                      src="images/horizontal-nav/Dashboard.svg"
+                      alt="Access-rights"
+                      class="iconImages"
+                    />
+                    <span>Dashboard</span>
+                  </div>
+                  <img
+                    src="images/drop-right.svg"
+                    alt="drop-right"
+                    class="roles-selection-menu-icon icon-none"
+                /></a>
+              </li>
+              <li class="roles-selection-menu">
+                <a href="employees.html">
+                  <div>
+                    <img
+                      src="images/employee-team.svg"
+                      alt="roles"
+                      class="iconImages"
+                    />
+                    <span>Employees</span>
+                  </div>
+                  <img
+                    src="images/drop-down-right.png"
+                    alt="drop-right"
+                    class="icon-none"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="role-management-dashboard">
+            <div class="role-management-dashboard-heading">
+              <hr class="role-management-dashboard-heading-line" />
+              <p>ROLE / USER MANAGEMENT</p>
+            </div>
+            <ul>
+              <li class="roles-selected-menu">
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/setting.png"
+                      alt="roles"
+                      id="selectedIconImage"
+                    />
+                    <span>Roles</span>
+                  </div>
+                  <img
+                    src="images/drop-right-selected.svg"
+                    alt="drop-right"
+                    class="roles-selection-menu-icon"
+                  />
+                </a>
+                <span class="dashboard-selection-highlight"></span>
+              </li>
+
+              <li class="roles-selection-menu">
+                <a href="#" class="link">
+                  <div>
+                    <img
+                      src="images\horizontal-nav\assign user.svg"
+                      alt="Access-rights"
+                      class="iconImages"
+                    />
+                    <span>Access Rights</span>
+                  </div>
+                  <img
+                    src="images/drop-right.svg"
+                    alt="drop-right"
+                    class="roles-selection-menu-icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="app-update">
+          <p class="app-update-install">Install new app-update 2.3.1A</p>
+          <p class="app-update-description">
+            Allow to launch the new app-update for the AD application
+          </p>
+          <div>
+            <button class="btn btn-dismiss">Dismiss</button
+            ><button class="btn btn-accept">Accept</button>
+          </div>
+        </div>
+      </aside>
+      <section class="role-details-user-options-section">
+        <div class="sidebar-handle-icon" onclick="layoutChange()">
+          <img src="images/handle.png" alt="handle" class="sidebar-handle" />
+        </div>
+        <div class="user-options-section">
+          <div class="search-bar">
+            <img src="images/search.png" alt="search" />
+            <input type="search" placeholder="Search" />
+          </div>
+          <span>
+            <a href="#"><span class="icon-language"></span></a>
+          </span>
+          <span>
+            <a href="#"> <span class="icon-categories"></span></a>
+          </span>
+          <span>
+            <a href="#"> <span class="icon-mode"></span></a>
+          </span>
+          <span>
+            <a href="#">
+              <span class="icon-notifications"
+                ><span class="notification-icon-part-a"></span
+                ><span class="notification-icon-part-b"></span
+                ><span class="notification-icon-part-c"></span></span
+            ></a>
+          </span>
+          <span><img src="images/profile-pic.png" alt="" /></span>
+          <div class="profile">
+            <p class="profile-name">John Abraham</p>
+            <p class="profile-role">Admin</p>
+          </div>
+          <div class="nav-dropdown">
+            <select name="profile-switch" class="nav-drop-down"></select>
+          </div>
+        </div>
+      </section>
+      <main class="main">
+        <section class="role-details-header">
+          <div class="role-details-header-text-content">
+            <div>
+              <h4>Roles</h4>
+              <img
+                src="images/drop-right-icon.png"
+                alt="drop-right"
+                class="roles-selection-menu-icon"
+              />
+              <p>Employees</p>
+            </div>
+            <p>All the roles are conspan here</p>
+          </div>
+          <div class="role-header-buttons">
+            <button class="btn btn-add-role">
+              <img src="images\Interface\Add.svg" alt="add-icon" />ADD EMPLOYEEE
+            </button>
+          </div>
+        </section>
+        <section class="role-description-header">
+          <div class="role-description-text-content">
+            <h4>Role Description</h4>
+            <p>
+              Conspan the providers that are available to users when they sign
+              in.Conspan the providers that are available to users when they
+              sign in.Conspan the providers that are available to users when
+              they sign in.
+            </p>
+          </div>
+        </section>
+
+        <section class="roles-details">
+          <div class="roles-card">
+            <div class="roles-card-header">
+              <img src="images/role-description-profile.png" alt="profile" />
+              <div>
+                <h5>Robert Fox</h5>
+                <p>Head of Product design</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-Vector-12"></span>
+                <p>INF122</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-email-svgrepocom"></span>
+                <p>adamk@yahoo.com</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/team_svgrepo.com.svg" alt="team" />
+                <p>Technology</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/location-pin.svg" alt="location" />
+                <p>Stockton, New Hampshire</p>
+              </div>
+            </div>
+            <div class="view-all-employees">
+              <p>View</p>
+              <span class="icon-Vector"></span>
+            </div>
+          </div>
+          <div class="roles-card">
+            <div class="roles-card-header">
+              <img src="images/role-description-profile.png" alt="profile" />
+              <div>
+                <h5>Robert Fox</h5>
+                <p>Head of Product design</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-Vector-12"></span>
+                <p>INF122</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-email-svgrepocom"></span>
+                <p>adamk@yahoo.com</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/team_svgrepo.com.svg" alt="team" />
+                <p>Technology</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/location-pin.svg" alt="location" />
+                <p>Stockton, New Hampshire</p>
+              </div>
+            </div>
+            <div class="view-all-employees">
+              <p>View</p>
+              <span class="icon-Vector"></span>
+            </div>
+          </div>
+          <div class="roles-card">
+            <div class="roles-card-header">
+              <img src="images/role-description-profile.png" alt="profile" />
+              <div>
+                <h5>Robert Fox</h5>
+                <p>Head of Product design</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-Vector-12"></span>
+                <p>INF122</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-email-svgrepocom"></span>
+                <p>adamk@yahoo.com</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/team_svgrepo.com.svg" alt="team" />
+                <p>Technology</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/location-pin.svg" alt="location" />
+                <p>Stockton, New Hampshire</p>
+              </div>
+            </div>
+            <div class="view-all-employees">
+              <p>View</p>
+              <span class="icon-Vector"></span>
+            </div>
+          </div>
+          <div class="roles-card">
+            <div class="roles-card-header">
+              <img src="images/role-description-profile.png" alt="profile" />
+              <div>
+                <h5>Robert Fox</h5>
+                <p>Head of Product design</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-Vector-12"></span>
+                <p>INF122</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-email-svgrepocom"></span>
+                <p>adamk@yahoo.com</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/team_svgrepo.com.svg" alt="team" />
+                <p>Technology</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/location-pin.svg" alt="location" />
+                <p>Stockton, New Hampshire</p>
+              </div>
+            </div>
+            <div class="view-all-employees">
+              <p>View</p>
+              <span class="icon-Vector"></span>
+            </div>
+          </div>
+          <div class="roles-card">
+            <div class="roles-card-header">
+              <img src="images/role-description-profile.png" alt="profile" />
+              <div>
+                <h5>Robert Fox</h5>
+                <p>Head of Product design</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-Vector-12"></span>
+                <p>INF122</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-email-svgrepocom"></span>
+                <p>adamk@yahoo.com</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/team_svgrepo.com.svg" alt="team" />
+                <p>Technology</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/location-pin.svg" alt="location" />
+                <p>Stockton, New Hampshire</p>
+              </div>
+            </div>
+            <div class="view-all-employees">
+              <p>View</p>
+              <span class="icon-Vector"></span>
+            </div>
+          </div>
+          <div class="roles-card">
+            <div class="roles-card-header">
+              <img src="images/role-description-profile.png" alt="profile" />
+              <div>
+                <h5>Robert Fox</h5>
+                <p>Head of Product design</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-Vector-12"></span>
+                <p>INF122</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <span class="icon-email-svgrepocom"></span>
+                <p>adamk@yahoo.com</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/team_svgrepo.com.svg" alt="team" />
+                <p>Technology</p>
+              </div>
+            </div>
+            <div class="department">
+              <div>
+                <img src="images/location-pin.svg" alt="location" />
+                <p>Stockton, New Hampshire</p>
+              </div>
+            </div>
+            <div class="view-all-employees">
+              <p>View</p>
+              <span class="icon-Vector"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/javaScript/role-details.js" defer></script>
+    <script src="/javaScript/common.js" defer></script>
+  </body>
+</html>
